@@ -6,8 +6,8 @@ export function CVAbout() {
     <section className="resume-section" id="about">
       <div className="resume-section-content">
         <h1 className="mb-0">
-          Clarence
-          <span className="text-primary">Taylor</span>
+          Amir mohammad
+          <span className="text-primary"> Fatahi</span>
         </h1>
         <AboutContent />
         <AboutIcons />

@@ -25267,57 +25267,235 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/navbar":"dZSKD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/CV-body":"5IgyA"}],"dZSKD":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$319f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/CV-body":"5IgyA","./components/navbar":"dZSKD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5IgyA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b8b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$319f.prelude(module);
+$parcel$ReactRefreshHelpers$b8b2.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Navbar", ()=>Navbar);
+parcelHelpers.export(exports, "CVBody", ()=>CVBody);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _collapsNavbar = require("./components/collaps-navbar");
-var _navbarToggler = require("./components/navbar-toggler");
-var _navbarBrand = require("./components/navbar-brand");
-function Navbar() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: "navbar navbar-expand-lg navbar-dark bg-primary fixed-top",
-        id: "sideNav",
+var _cvAbout = require("./components/CV-about");
+var _cvAwards = require("./components/CV-awards");
+var _cvEducation = require("./components/CV-education");
+var _cvExperiance = require("./components/CV-experiance");
+var _cvInterests = require("./components/CV-interests");
+var _cvSkills = require("./components/CV-skills");
+function CVBody() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container-fluid p-0",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarBrand.NavbarBrand), {}, void 0, false, {
-                fileName: "src/components/navbar/index.jsx",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAbout.CVAbout), {}, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 11,
-                columnNumber: 7
+                columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarToggler.NavbarToggler), {}, void 0, false, {
-                fileName: "src/components/navbar/index.jsx",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 12,
-                columnNumber: 7
+                columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _collapsNavbar.CollapseNavbar), {}, void 0, false, {
-                fileName: "src/components/navbar/index.jsx",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvExperiance.CVExperience), {}, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 13,
-                columnNumber: 7
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvEducation.CVEducation), {}, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvSkills.CVSkills), {}, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvInterests.CVInterests), {}, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 20,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAwards.CVAwards), {}, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 21,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/navbar/index.jsx",
-        lineNumber: 7,
-        columnNumber: 5
+        fileName: "src/components/CV-body/index.jsx",
+        lineNumber: 10,
+        columnNumber: 9
     }, this);
 }
-_c = Navbar;
+_c = CVBody;
 var _c;
-$RefreshReg$(_c, "Navbar");
+$RefreshReg$(_c, "CVBody");
 
-  $parcel$ReactRefreshHelpers$319f.postlude(module);
+  $parcel$ReactRefreshHelpers$b8b2.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/collaps-navbar":"9nj61","./components/navbar-toggler":"j9jTf","./components/navbar-brand":"fLj8b"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./components/CV-about":"54cgF","./components/CV-awards":"cWsFr","./components/CV-education":"4WDZy","./components/CV-experiance":"gxkv9","./components/CV-interests":"jY4ES","./components/CV-skills":"6XMNr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"54cgF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b62e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b62e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CVAbout", ()=>CVAbout);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _aboutContent = require("./components/about-content");
+var _aboutIcons = require("./components/about-icons");
+function CVAbout() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "resume-section",
+        id: "about",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "resume-section-content",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "mb-0",
+                    children: [
+                        "Amir mohammad",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-primary",
+                            children: " Fatahi"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-about/index.jsx",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutContent.AboutContent), {}, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutIcons.AboutIcons), {}, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/CV-body/components/CV-about/index.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/CV-body/components/CV-about/index.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, this);
+}
+_c = CVAbout;
+var _c;
+$RefreshReg$(_c, "CVAbout");
+
+  $parcel$ReactRefreshHelpers$b62e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./components/about-content":"cYa74","./components/about-icons":"4QPxR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cYa74":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6e75 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6e75.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AboutContent", ()=>AboutContent);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+function AboutContent() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "subheading mb-5",
+                children: [
+                    "Ghalandari Street . Gheytarie , Tehran \xb7 (+98) 939-833-2265 \xb7",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "mailto: amirmf831380@gmail.com",
+                        children: "amirmf831380@gmail.com"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "lead mb-5",
+                children: "I am a junior React developer with high-standard academic background. an enthusiast youth with avidity to learn latest programming technology."
+            }, void 0, false, {
+                fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = AboutContent;
+var _c;
+$RefreshReg$(_c, "AboutContent");
+
+  $parcel$ReactRefreshHelpers$6e75.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25481,450 +25659,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"70b5e77e8d5318d5":"786KC"}],"9nj61":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d66d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d66d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CollapseNavbar", ()=>CollapseNavbar);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function CollapseNavbar() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "collapse navbar-collapse",
-        id: "navbarResponsive",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-            className: "navbar-nav",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    className: "nav-item",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "nav-link js-scroll-trigger",
-                        href: "#about",
-                        children: "About"
-                    }, void 0, false, {
-                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                        lineNumber: 6,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                    lineNumber: 5,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    className: "nav-item",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "nav-link js-scroll-trigger",
-                        href: "#experience",
-                        children: "Experience"
-                    }, void 0, false, {
-                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                        lineNumber: 11,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    className: "nav-item",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "nav-link js-scroll-trigger",
-                        href: "#education",
-                        children: "Education"
-                    }, void 0, false, {
-                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                        lineNumber: 16,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    className: "nav-item",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "nav-link js-scroll-trigger",
-                        href: "#skills",
-                        children: "Skills"
-                    }, void 0, false, {
-                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                        lineNumber: 21,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                    lineNumber: 20,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    className: "nav-item",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "nav-link js-scroll-trigger",
-                        href: "#interests",
-                        children: "Interests"
-                    }, void 0, false, {
-                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                        lineNumber: 26,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                    lineNumber: 25,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    className: "nav-item",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "nav-link js-scroll-trigger",
-                        href: "#awards",
-                        children: "Awards"
-                    }, void 0, false, {
-                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                        lineNumber: 31,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-                    lineNumber: 30,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-            lineNumber: 4,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
-        lineNumber: 3,
-        columnNumber: 5
-    }, this);
-}
-_c = CollapseNavbar;
-var _c;
-$RefreshReg$(_c, "CollapseNavbar");
-
-  $parcel$ReactRefreshHelpers$d66d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"j9jTf":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1566 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1566.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NavbarToggler", ()=>NavbarToggler);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function NavbarToggler() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-        className: "navbar-toggler",
-        type: "button",
-        "data-bs-toggle": "collapse",
-        "data-bs-target": "#navbarResponsive",
-        "aria-controls": "navbarResponsive",
-        "aria-expanded": "false",
-        "aria-label": "Toggle navigation",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-            className: "navbar-toggler-icon"
-        }, void 0, false, {
-            fileName: "src/components/navbar/components/navbar-toggler/index.jsx",
-            lineNumber: 12,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/components/navbar/components/navbar-toggler/index.jsx",
-        lineNumber: 3,
-        columnNumber: 5
-    }, this);
-}
-_c = NavbarToggler;
-var _c;
-$RefreshReg$(_c, "NavbarToggler");
-
-  $parcel$ReactRefreshHelpers$1566.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fLj8b":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ad0e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ad0e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NavbarBrand", ()=>NavbarBrand);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _profileJpg = require("../../../../../assets/img/profile.jpg");
-var _profileJpgDefault = parcelHelpers.interopDefault(_profileJpg);
-function NavbarBrand() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        className: "navbar-brand js-scroll-trigger",
-        href: "#page-top",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "d-block d-lg-none",
-                children: "Clarence Taylor"
-            }, void 0, false, {
-                fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "d-none d-lg-block",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "img-fluid img-profile rounded-circle mx-auto mb-2",
-                    src: (0, _profileJpgDefault.default),
-                    alt: "..."
-                }, void 0, false, {
-                    fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = NavbarBrand;
-var _c;
-$RefreshReg$(_c, "NavbarBrand");
-
-  $parcel$ReactRefreshHelpers$ad0e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../../../assets/img/profile.jpg":"7ZJxG"}],"7ZJxG":[function(require,module,exports) {
-module.exports = require("152c179dffb021dc").getBundleURL("3uGpT") + "profile.49c63c58.jpg" + "?" + Date.now();
-
-},{"152c179dffb021dc":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"5IgyA":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b8b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b8b2.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CVBody", ()=>CVBody);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _cvAbout = require("./components/CV-about");
-var _cvAwards = require("./components/CV-awards");
-var _cvEducation = require("./components/CV-education");
-var _cvExperiance = require("./components/CV-experiance");
-var _cvInterests = require("./components/CV-interests");
-var _cvSkills = require("./components/CV-skills");
-function CVBody() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container-fluid p-0",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAbout.CVAbout), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 11,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                className: "m-0"
-            }, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 12,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvExperiance.CVExperience), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 13,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                className: "m-0"
-            }, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 14,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvEducation.CVEducation), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 15,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                className: "m-0"
-            }, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 16,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvSkills.CVSkills), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 17,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                className: "m-0"
-            }, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 18,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvInterests.CVInterests), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 19,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                className: "m-0"
-            }, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 20,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAwards.CVAwards), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 21,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/CV-body/index.jsx",
-        lineNumber: 10,
-        columnNumber: 9
-    }, this);
-}
-_c = CVBody;
-var _c;
-$RefreshReg$(_c, "CVBody");
-
-  $parcel$ReactRefreshHelpers$b8b2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/CV-about":"54cgF","./components/CV-experiance":"gxkv9","./components/CV-education":"4WDZy","./components/CV-skills":"6XMNr","./components/CV-interests":"jY4ES","./components/CV-awards":"cWsFr"}],"54cgF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b62e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b62e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CVAbout", ()=>CVAbout);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _aboutContent = require("./components/about-content");
-var _aboutIcons = require("./components/about-icons");
-function CVAbout() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "resume-section",
-        id: "about",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "resume-section-content",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "mb-0",
-                    children: [
-                        "Clarence",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            className: "text-primary",
-                            children: "Taylor"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                            lineNumber: 10,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutContent.AboutContent), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutIcons.AboutIcons), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/CV-body/components/CV-about/index.jsx",
-            lineNumber: 7,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/components/CV-body/components/CV-about/index.jsx",
-        lineNumber: 6,
-        columnNumber: 5
-    }, this);
-}
-_c = CVAbout;
-var _c;
-$RefreshReg$(_c, "CVAbout");
-
-  $parcel$ReactRefreshHelpers$b62e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/about-icons":"4QPxR","./components/about-content":"cYa74"}],"4QPxR":[function(require,module,exports) {
+},{"70b5e77e8d5318d5":"786KC"}],"4QPxR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c60b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25941,7 +25676,7 @@ function AboutIcons() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 className: "social-icon",
-                href: "#!",
+                href: "https://www.linkedin.com/in/amir-mohammad-fatahi-93a879220/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                     className: "fab fa-linkedin-in"
                 }, void 0, false, {
@@ -25956,7 +25691,7 @@ function AboutIcons() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 className: "social-icon",
-                href: "#!",
+                href: "https://github.com/Amirmfth",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                     className: "fab fa-github"
                 }, void 0, false, {
@@ -26015,64 +25750,514 @@ $RefreshReg$(_c, "AboutIcons");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cYa74":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6e75 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cWsFr":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$dce2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6e75.prelude(module);
+$parcel$ReactRefreshHelpers$dce2.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "AboutContent", ()=>AboutContent);
+parcelHelpers.export(exports, "CVAwards", ()=>CVAwards);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-function AboutContent() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
+var _awardsContent = require("./components/awards-content");
+function CVAwards() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "resume-section",
+        id: "awards",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "resume-section-content",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "mb-5",
+                    children: "Awards & Certifications"
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-awards/index.jsx",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsContent.AwardsContent), {}, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-awards/index.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/CV-body/components/CV-awards/index.jsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/CV-body/components/CV-awards/index.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = CVAwards;
+var _c;
+$RefreshReg$(_c, "CVAwards");
+
+  $parcel$ReactRefreshHelpers$dce2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./components/awards-content":"7dGz2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7dGz2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d828 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d828.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AwardsContent", ()=>AwardsContent);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function AwardsContent() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+        className: "fa-ul mb-0",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 6,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 5,
+                        columnNumber: 9
+                    }, this),
+                    "Google Analytics Certified Developer"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 4,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this),
+                    "Mobile Web Specialist - Google Certification"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, this),
+                    "1",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
+                        children: "st"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 20,
+                        columnNumber: 10
+                    }, this),
+                    "Place - University of Colorado Boulder - Emerging Tech Competition 2009"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 25,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    "1",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
+                        children: "st"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 27,
+                        columnNumber: 10
+                    }, this),
+                    "Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, this),
+                    "2",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
+                        children: "nd"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 35,
+                        columnNumber: 10
+                    }, this),
+                    "Place - University of Colorado Boulder - Emerging Tech Competition 2008"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 40,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, this),
+                    "1",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
+                        children: "st"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 42,
+                        columnNumber: 10
+                    }, this),
+                    "Place - James Buchanan High School - Hackathon 2006"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 38,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "fa-li",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fas fa-trophy text-warning"
+                        }, void 0, false, {
+                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                            lineNumber: 47,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this),
+                    "3",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
+                        children: "rd"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                        lineNumber: 49,
+                        columnNumber: 10
+                    }, this),
+                    "Place - James Buchanan High School - Hackathon 2005"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+                lineNumber: 45,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+        lineNumber: 3,
+        columnNumber: 5
+    }, this);
+}
+_c = AwardsContent;
+var _c;
+$RefreshReg$(_c, "AwardsContent");
+
+  $parcel$ReactRefreshHelpers$d828.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4WDZy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f935 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f935.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CVEducation", ()=>CVEducation);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _highSchool = require("./components/high-school");
+var _university = require("./components/university");
+function CVEducation() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "resume-section",
+        id: "education",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "resume-section-content",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "mb-5",
+                    children: "Education"
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _university.University), {}, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _highSchool.Highschool), {}, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/CV-body/components/CV-education/index.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/CV-body/components/CV-education/index.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, this);
+}
+_c = CVEducation;
+var _c;
+$RefreshReg$(_c, "CVEducation");
+
+  $parcel$ReactRefreshHelpers$f935.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./components/high-school":"cipni","./components/university":"i9Bd6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cipni":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee4c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ee4c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Highschool", ()=>Highschool);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Highschool() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "d-flex flex-column flex-md-row justify-content-between",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "subheading mb-5",
+                className: "flex-grow-1",
                 children: [
-                    "3542 Berry Street \xb7 Cheyenne Wells, CO 80810 \xb7 (317) 585-8468 \xb7",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "mailto:name@email.com",
-                        children: "name@email.com"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-0",
+                        children: "Shahid Madani High School"
                     }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
+                        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+                        lineNumber: 5,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "subheading mb-3",
+                        children: "Mathematic-Physics major"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "diploma: 18"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+                lineNumber: 4,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-shrink-0",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "text-primary",
+                    children: "August 2019 - June 2023"
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
+        lineNumber: 3,
+        columnNumber: 5
+    }, this);
+}
+_c = Highschool;
+var _c;
+$RefreshReg$(_c, "Highschool");
+
+  $parcel$ReactRefreshHelpers$ee4c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9Bd6":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5f57 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5f57.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "University", ()=>University);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function University() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "d-flex flex-column flex-md-row justify-content-between mb-5",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-grow-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-0",
+                        children: "Technical University of Munich"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
+                        lineNumber: 5,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "subheading mb-3",
+                        children: "Bachelor of Computer science"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: "Computer Science - Web Development Track"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "GPA: 4"
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
                         lineNumber: 8,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
-                lineNumber: 6,
+                fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
+                lineNumber: 4,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "lead mb-5",
-                children: "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-shrink-0",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "text-primary",
+                    children: "August 2023 - May 2027"
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
-                fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
+                fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
                 lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
-        lineNumber: 5,
+        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
+        lineNumber: 3,
         columnNumber: 5
     }, this);
 }
-_c = AboutContent;
+_c = University;
 var _c;
-$RefreshReg$(_c, "AboutContent");
+$RefreshReg$(_c, "University");
 
-  $parcel$ReactRefreshHelpers$6e75.postlude(module);
+  $parcel$ReactRefreshHelpers$5f57.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gxkv9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gxkv9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$891a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26143,7 +26328,7 @@ $RefreshReg$(_c, "CVExperience");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/senior-web-developer":"hqfgp","./components/web-developer":"dTsGf","./components/junior-web-designer":"7ckHw","./components/web-design-intern":"f9zSG"}],"hqfgp":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./components/senior-web-developer":"hqfgp","./components/web-developer":"dTsGf","./components/junior-web-designer":"7ckHw","./components/web-design-intern":"f9zSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hqfgp":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a4fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26455,229 +26640,106 @@ $RefreshReg$(_c, "InternSection");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4WDZy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f935 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jY4ES":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5610 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f935.prelude(module);
+$parcel$ReactRefreshHelpers$5610.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CVEducation", ()=>CVEducation);
+parcelHelpers.export(exports, "CVInterests", ()=>CVInterests);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _highSchool = require("./components/high-school");
-var _university = require("./components/university");
-function CVEducation() {
+var _interestContent = require("./components/interest-content");
+function CVInterests() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
-        id: "education",
+        id: "interests",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "resume-section-content",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     className: "mb-5",
-                    children: "Education"
+                    children: "Interests"
                 }, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
+                    fileName: "src/components/CV-body/components/CV-interests/index.jsx",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _interestContent.InterestsContent), {}, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-interests/index.jsx",
                     lineNumber: 8,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _university.University), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _highSchool.Highschool), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
-                    lineNumber: 10,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "src/components/CV-body/components/CV-education/index.jsx",
-            lineNumber: 7,
+            fileName: "src/components/CV-body/components/CV-interests/index.jsx",
+            lineNumber: 6,
             columnNumber: 7
         }, this)
     }, void 0, false, {
-        fileName: "src/components/CV-body/components/CV-education/index.jsx",
-        lineNumber: 6,
+        fileName: "src/components/CV-body/components/CV-interests/index.jsx",
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
-_c = CVEducation;
+_c = CVInterests;
 var _c;
-$RefreshReg$(_c, "CVEducation");
+$RefreshReg$(_c, "CVInterests");
 
-  $parcel$ReactRefreshHelpers$f935.postlude(module);
+  $parcel$ReactRefreshHelpers$5610.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/high-school":"cipni","./components/university":"i9Bd6"}],"cipni":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ee4c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","./components/interest-content":"8Q0pn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Q0pn":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$defd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ee4c.prelude(module);
+$parcel$ReactRefreshHelpers$defd.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Highschool", ()=>Highschool);
+parcelHelpers.export(exports, "InterestsContent", ()=>InterestsContent);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function Highschool() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "d-flex flex-column flex-md-row justify-content-between",
+var _react = require("react");
+function InterestsContent() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex-grow-1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "mb-0",
-                        children: "James Buchanan High School"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-                        lineNumber: 5,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "subheading mb-3",
-                        children: "Technology Magnet Program"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-                        lineNumber: 6,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "GPA: 3.56"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-                        lineNumber: 7,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-                lineNumber: 4,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Apart from being a web developer, surprisingly I'm a huge sportFan. as an outdoor activity I mostly play Football with my friends or play billiard ,though i must say i am a novice"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
+                lineNumber: 6,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex-shrink-0",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "text-primary",
-                    children: "August 2002 - May 2006"
-                }, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, this)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "mb-0",
+                children: "but for indoor activity , I do various stuff like making music(which I love the most) , studying about management and business or learn new languages. I love being in my own house and my own room,and frankly, I see my self as an introverted person"
             }, void 0, false, {
-                fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-                lineNumber: 9,
+                fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
+                lineNumber: 11,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/CV-body/components/CV-education/components/high-school/index.jsx",
-        lineNumber: 3,
+        fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
-_c = Highschool;
+_c = InterestsContent;
 var _c;
-$RefreshReg$(_c, "Highschool");
+$RefreshReg$(_c, "InterestsContent");
 
-  $parcel$ReactRefreshHelpers$ee4c.postlude(module);
+  $parcel$ReactRefreshHelpers$defd.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9Bd6":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5f57 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5f57.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "University", ()=>University);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function University() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "d-flex flex-column flex-md-row justify-content-between mb-5",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex-grow-1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "mb-0",
-                        children: "University of Colorado Boulder"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                        lineNumber: 5,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "subheading mb-3",
-                        children: "Bachelor of Science"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                        lineNumber: 6,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: "Computer Science - Web Development Track"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                        lineNumber: 7,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "GPA: 3.23"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                lineNumber: 4,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex-shrink-0",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "text-primary",
-                    children: "August 2006 - May 2010"
-                }, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/CV-body/components/CV-education/components/university/index.jsx",
-        lineNumber: 3,
-        columnNumber: 5
-    }, this);
-}
-_c = University;
-var _c;
-$RefreshReg$(_c, "University");
-
-  $parcel$ReactRefreshHelpers$5f57.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6XMNr":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6XMNr":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a31 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26736,7 +26798,7 @@ $RefreshReg$(_c, "CVSkills");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/languages-tools":"9dl3d","./components/workflow":"bxV5i"}],"9dl3d":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./components/languages-tools":"9dl3d","./components/workflow":"bxV5i","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9dl3d":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c492 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27092,390 +27154,328 @@ $RefreshReg$(_c, "Workflow");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jY4ES":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5610 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dZSKD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$319f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5610.prelude(module);
+$parcel$ReactRefreshHelpers$319f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CVInterests", ()=>CVInterests);
+parcelHelpers.export(exports, "Navbar", ()=>Navbar);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _interestContent = require("./components/interest-content");
-function CVInterests() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "resume-section",
-        id: "interests",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "resume-section-content",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    className: "mb-5",
-                    children: "Interests"
-                }, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-interests/index.jsx",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _interestContent.InterestsContent), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-interests/index.jsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/CV-body/components/CV-interests/index.jsx",
-            lineNumber: 6,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/components/CV-body/components/CV-interests/index.jsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = CVInterests;
-var _c;
-$RefreshReg$(_c, "CVInterests");
-
-  $parcel$ReactRefreshHelpers$5610.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/interest-content":"8Q0pn"}],"8Q0pn":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$defd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$defd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "InterestsContent", ()=>InterestsContent);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-function InterestsContent() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
+var _collapsNavbar = require("./components/collaps-navbar");
+var _navbarToggler = require("./components/navbar-toggler");
+var _navbarBrand = require("./components/navbar-brand");
+function Navbar() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: "navbar navbar-expand-lg navbar-dark bg-primary fixed-top",
+        id: "sideNav",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking."
-            }, void 0, false, {
-                fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
-                lineNumber: 6,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarBrand.NavbarBrand), {}, void 0, false, {
+                fileName: "src/components/navbar/index.jsx",
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "mb-0",
-                children: "When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world."
-            }, void 0, false, {
-                fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarToggler.NavbarToggler), {}, void 0, false, {
+                fileName: "src/components/navbar/index.jsx",
                 lineNumber: 12,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _collapsNavbar.CollapseNavbar), {}, void 0, false, {
+                fileName: "src/components/navbar/index.jsx",
+                lineNumber: 13,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
-        lineNumber: 5,
+        fileName: "src/components/navbar/index.jsx",
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
-_c = InterestsContent;
+_c = Navbar;
 var _c;
-$RefreshReg$(_c, "InterestsContent");
+$RefreshReg$(_c, "Navbar");
 
-  $parcel$ReactRefreshHelpers$defd.postlude(module);
+  $parcel$ReactRefreshHelpers$319f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cWsFr":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$dce2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","./components/collaps-navbar":"9nj61","./components/navbar-toggler":"j9jTf","./components/navbar-brand":"fLj8b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9nj61":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d66d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$dce2.prelude(module);
+$parcel$ReactRefreshHelpers$d66d.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CVAwards", ()=>CVAwards);
+parcelHelpers.export(exports, "CollapseNavbar", ()=>CollapseNavbar);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _awardsContent = require("./components/awards-content");
-function CVAwards() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "resume-section",
-        id: "awards",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "resume-section-content",
+function CollapseNavbar() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "collapse navbar-collapse",
+        id: "navbarResponsive",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+            className: "navbar-nav",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    className: "mb-5",
-                    children: "Awards & Certifications"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "nav-item",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "nav-link js-scroll-trigger",
+                        href: "#about",
+                        children: "About"
+                    }, void 0, false, {
+                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                        lineNumber: 6,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-awards/index.jsx",
-                    lineNumber: 7,
+                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                    lineNumber: 5,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsContent.AwardsContent), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-awards/index.jsx",
-                    lineNumber: 8,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "nav-item",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "nav-link js-scroll-trigger",
+                        href: "#experience",
+                        children: "Experience"
+                    }, void 0, false, {
+                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "nav-item",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "nav-link js-scroll-trigger",
+                        href: "#education",
+                        children: "Education"
+                    }, void 0, false, {
+                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                        lineNumber: 16,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "nav-item",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "nav-link js-scroll-trigger",
+                        href: "#skills",
+                        children: "Skills"
+                    }, void 0, false, {
+                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "nav-item",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "nav-link js-scroll-trigger",
+                        href: "#interests",
+                        children: "Interests"
+                    }, void 0, false, {
+                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                        lineNumber: 26,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "nav-item",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "nav-link js-scroll-trigger",
+                        href: "#awards",
+                        children: "Awards"
+                    }, void 0, false, {
+                        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                        lineNumber: 31,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "src/components/CV-body/components/CV-awards/index.jsx",
-            lineNumber: 6,
+            fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
+            lineNumber: 4,
             columnNumber: 7
         }, this)
     }, void 0, false, {
-        fileName: "src/components/CV-body/components/CV-awards/index.jsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = CVAwards;
-var _c;
-$RefreshReg$(_c, "CVAwards");
-
-  $parcel$ReactRefreshHelpers$dce2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/awards-content":"7dGz2"}],"7dGz2":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d828 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d828.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "AwardsContent", ()=>AwardsContent);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function AwardsContent() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-        className: "fa-ul mb-0",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 6,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 5,
-                        columnNumber: 9
-                    }, this),
-                    "Google Analytics Certified Developer"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 4,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 12,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 11,
-                        columnNumber: 9
-                    }, this),
-                    "Mobile Web Specialist - Google Certification"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    "1",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "st"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 20,
-                        columnNumber: 10
-                    }, this),
-                    "Place - University of Colorado Boulder - Emerging Tech Competition 2009"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 16,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 25,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this),
-                    "1",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "st"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 27,
-                        columnNumber: 10
-                    }, this),
-                    "Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, this),
-                    "2",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "nd"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 35,
-                        columnNumber: 10
-                    }, this),
-                    "Place - University of Colorado Boulder - Emerging Tech Competition 2008"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 40,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 39,
-                        columnNumber: 9
-                    }, this),
-                    "1",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "st"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 42,
-                        columnNumber: 10
-                    }, this),
-                    "Place - James Buchanan High School - Hackathon 2006"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 47,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, this),
-                    "3",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "rd"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 49,
-                        columnNumber: 10
-                    }, this),
-                    "Place - James Buchanan High School - Hackathon 2005"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 45,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
+        fileName: "src/components/navbar/components/collaps-navbar/index.jsx",
         lineNumber: 3,
         columnNumber: 5
     }, this);
 }
-_c = AwardsContent;
+_c = CollapseNavbar;
 var _c;
-$RefreshReg$(_c, "AwardsContent");
+$RefreshReg$(_c, "CollapseNavbar");
 
-  $parcel$ReactRefreshHelpers$d828.postlude(module);
+  $parcel$ReactRefreshHelpers$d66d.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ivoSC","edxR2"], "edxR2", "parcelRequire4c82")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"j9jTf":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1566 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1566.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NavbarToggler", ()=>NavbarToggler);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function NavbarToggler() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-bs-toggle": "collapse",
+        "data-bs-target": "#navbarResponsive",
+        "aria-controls": "navbarResponsive",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+            className: "navbar-toggler-icon"
+        }, void 0, false, {
+            fileName: "src/components/navbar/components/navbar-toggler/index.jsx",
+            lineNumber: 12,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/navbar/components/navbar-toggler/index.jsx",
+        lineNumber: 3,
+        columnNumber: 5
+    }, this);
+}
+_c = NavbarToggler;
+var _c;
+$RefreshReg$(_c, "NavbarToggler");
+
+  $parcel$ReactRefreshHelpers$1566.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fLj8b":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ad0e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ad0e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NavbarBrand", ()=>NavbarBrand);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _myProfileJpg = require("../../../../../assets/img/myProfile.jpg");
+var _myProfileJpgDefault = parcelHelpers.interopDefault(_myProfileJpg);
+function NavbarBrand() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        className: "navbar-brand js-scroll-trigger",
+        href: "#page-top",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "d-block d-lg-none",
+                children: "Amir mohammad Fatahi"
+            }, void 0, false, {
+                fileName: "src/components/navbar/components/navbar-brand/index.jsx",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "d-none d-lg-block",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "img-fluid img-profile rounded-circle mx-auto mb-2",
+                    src: (0, _myProfileJpgDefault.default),
+                    alt: "..."
+                }, void 0, false, {
+                    fileName: "src/components/navbar/components/navbar-brand/index.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/navbar/components/navbar-brand/index.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/navbar/components/navbar-brand/index.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = NavbarBrand;
+var _c;
+$RefreshReg$(_c, "NavbarBrand");
+
+  $parcel$ReactRefreshHelpers$ad0e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../../../assets/img/myProfile.jpg":"gcgj3"}],"gcgj3":[function(require,module,exports) {
+module.exports = require("f1f7e2ba85d25e31").getBundleURL("3uGpT") + "myProfile.ce2f3eeb.jpg" + "?" + Date.now();
+
+},{"f1f7e2ba85d25e31":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}]},["1xC6H","ivoSC","edxR2"], "edxR2", "parcelRequire4c82")
 
 //# sourceMappingURL=index.fb506c2f.js.map

@@ -4,16 +4,15 @@ export function InterestsContent() {
   return (
     <Fragment>
       <p>
-        Apart from being a web developer, I enjoy most of my time being
-        outdoors. In the winter, I am an avid skier and novice ice climber.
-        During the warmer months here in Colorado, I enjoy mountain biking, free
-        climbing, and kayaking.
+        Apart from being a web developer, surprisingly I'm a huge sportFan. as
+        an outdoor activity I mostly play Football with my friends or play
+        billiard ,though i must say i am a novice
       </p>
       <p className="mb-0">
-        When forced indoors, I follow a number of sci-fi and fantasy genre
-        movies and television shows, I am an aspiring chef, and I spend a large
-        amount of my free time exploring the latest technology advancements in
-        the front-end web development world.
+        but for indoor activity , I do various stuff like making music(which I
+        love the most) , studying about management and business or learn new
+        languages. I love being in my own house and my own room,and frankly, I
+        see my self as an introverted person
       </p>
     </Fragment>
   );
