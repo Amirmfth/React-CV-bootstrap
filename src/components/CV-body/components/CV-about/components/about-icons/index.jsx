@@ -1,10 +1,11 @@
-export function AboutIcons() {
+export function AboutIcons(props) {
+  const {gitHub , linkedin} = props.content
   return (
     <div className="social-icons">
-      <a className="social-icon" href="https://www.linkedin.com/in/amir-mohammad-fatahi-93a879220/">
+      <a className="social-icon" href={linkedin}>
         <i className="fab fa-linkedin-in"></i>
       </a>
-      <a className="social-icon" href="https://github.com/Amirmfth">
+      <a className="social-icon" href={gitHub}>
         <i className="fab fa-github"></i>
       </a>
       <a className="social-icon" href="#!">

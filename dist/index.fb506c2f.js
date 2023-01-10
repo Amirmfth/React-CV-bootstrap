@@ -25239,22 +25239,119 @@ var _react = require("react");
 var _cvBody = require("./components/CV-body");
 var _navbar = require("./components/navbar");
 function App() {
+    const navbarInfo = {
+        navbarName: "Amir mohammad Fatahi"
+    };
+    const about = {
+        firstName: "Amir mohammad",
+        lastName: "Fatahi",
+        address: "Ghalandari Street . Gheytarie , Tehran",
+        phoneNumber: "(+98) 939-833-2265",
+        email: "amirmf831380@gmail.com",
+        gitHub: "https://github.com/Amirmfth",
+        linkedin: "https://www.linkedin.com/in/amir-mohammad-fatahi-93a879220/",
+        text: "I am a junior React developer with high-standard academic background. an enthusiast youth with avidity to learn latest programming technology."
+    };
+    const experience = [
+        {
+            title: "Senior Web Developer",
+            subtitle: "Intelitec Solutions",
+            date: "March 2013 - Present",
+            text: "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring."
+        },
+        {
+            title: "Web Developer",
+            subtitle: "Intelitec Solutions",
+            date: "December 2011 - March 2013",
+            text: "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line."
+        },
+        {
+            title: "Junior Web Designer",
+            subtitle: "Shout! Media Productions",
+            date: "July 2010 - December 2011",
+            text: "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration."
+        },
+        {
+            title: "Web Design Intern",
+            subtitle: "Shout! Media Productions",
+            date: "September 2008 - June 2010",
+            text: "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI."
+        }
+    ];
+    const education = [
+        {
+            title: "Technical University of Munich",
+            subtitle: "Bachelor of Computer science",
+            date: "August 2023 - May 2027",
+            text: "Computer Science - Web Development Track | GPA: 4"
+        },
+        {
+            title: "Shahid Madani High School",
+            subtitle: "Mathematic-Physics major",
+            date: "August 2019 - June 2023",
+            text: "diploma: 18"
+        }
+    ];
+    const skills = {
+        langAndTools: [
+            "fab fa-html5",
+            "fab fa-css3-alt",
+            "fab fa-js-square",
+            "fab fa-angular",
+            "fab fa-react",
+            "fab fa-node-js",
+            "fab fa-sass",
+            "fab fa-less",
+            "fab fa-wordpress",
+            "fab fa-gulp",
+            "fab fa-grunt",
+            "fab fa-npm"
+        ],
+        workflow: [
+            "Mobile-First, Responsive Design",
+            "Cross Browser Testing & Debugging",
+            "Cross Functional Teams",
+            "Agile Development & Scrum"
+        ]
+    };
+    const interests = [
+        "Apart from being a web developer, surprisingly I'm a huge sportFan. as an outdoor activity I mostly play Football with my friends or play billiard ,though i must say i am a novice",
+        "but for indoor activity , I do various stuff like making music(which I love the most) , studying about management and business or learn new languages. I love being in my own house and my own room,and frankly, I see my self as an introverted person"
+    ];
+    const awards = [
+        "Google Analytics Certified Developer",
+        "Mobile Web Specialist - Google Certification",
+        "Place - University of Colorado Boulder - Emerging Tech Competition 2009",
+        "Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)",
+        "Place - University of Colorado Boulder - Emerging Tech Competition 2008",
+        "Place - James Buchanan High School - Hackathon 2006",
+        "Place - James Buchanan High School - Hackathon 2005"
+    ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbar.Navbar), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbar.Navbar), {
+                content: navbarInfo
+            }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 8,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvBody.CVBody), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvBody.CVBody), {
+                about: about,
+                experience: experience,
+                education: education,
+                skills: skills,
+                interests: interests,
+                awards: awards
+            }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 9,
+                lineNumber: 95,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 7,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }
@@ -25284,80 +25381,93 @@ var _cvEducation = require("./components/CV-education");
 var _cvExperiance = require("./components/CV-experiance");
 var _cvInterests = require("./components/CV-interests");
 var _cvSkills = require("./components/CV-skills");
-function CVBody() {
+function CVBody(props) {
+    const { about , experience , education , skills , interests , awards  } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container-fluid p-0",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAbout.CVAbout), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 11,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                className: "m-0"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAbout.CVAbout), {
+                content: about
             }, void 0, false, {
                 fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 12,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvExperiance.CVExperience), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 13,
-                columnNumber: 9
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                 className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvExperiance.CVExperience), {
+                content: experience
             }, void 0, false, {
                 fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 14,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvEducation.CVEducation), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 15,
-                columnNumber: 9
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                 className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvEducation.CVEducation), {
+                content: education
             }, void 0, false, {
                 fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 16,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvSkills.CVSkills), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 17,
-                columnNumber: 9
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                 className: "m-0"
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvSkills.CVSkills), {
+                content: skills
             }, void 0, false, {
                 fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 18,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvInterests.CVInterests), {}, void 0, false, {
-                fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 19,
-                columnNumber: 9
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                 className: "m-0"
             }, void 0, false, {
                 fileName: "src/components/CV-body/index.jsx",
-                lineNumber: 20,
-                columnNumber: 9
+                lineNumber: 19,
+                columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAwards.CVAwards), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvInterests.CVInterests), {
+                content: interests
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "m-0"
+            }, void 0, false, {
                 fileName: "src/components/CV-body/index.jsx",
                 lineNumber: 21,
-                columnNumber: 9
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cvAwards.CVAwards), {
+                content: awards
+            }, void 0, false, {
+                fileName: "src/components/CV-body/index.jsx",
+                lineNumber: 22,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/CV-body/index.jsx",
-        lineNumber: 10,
-        columnNumber: 9
+        lineNumber: 11,
+        columnNumber: 5
     }, this);
 }
 _c = CVBody;
@@ -25382,7 +25492,8 @@ parcelHelpers.export(exports, "CVAbout", ()=>CVAbout);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _aboutContent = require("./components/about-content");
 var _aboutIcons = require("./components/about-icons");
-function CVAbout() {
+function CVAbout(props) {
+    const { firstName , lastName  } = props.content;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
         id: "about",
@@ -25392,40 +25503,47 @@ function CVAbout() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: "mb-0",
                     children: [
-                        "Amir mohammad",
+                        firstName,
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             className: "text-primary",
-                            children: " Fatahi"
-                        }, void 0, false, {
+                            children: [
+                                " ",
+                                lastName
+                            ]
+                        }, void 0, true, {
                             fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                            lineNumber: 10,
+                            lineNumber: 11,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                    lineNumber: 8,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutContent.AboutContent), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutIcons.AboutIcons), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutContent.AboutContent), {
+                    content: props.content
+                }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-about/index.jsx",
                     lineNumber: 13,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutIcons.AboutIcons), {
+                    content: props.content
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-about/index.jsx",
+                    lineNumber: 14,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/CV-body/components/CV-about/index.jsx",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/CV-body/components/CV-about/index.jsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -25450,39 +25568,40 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AboutContent", ()=>AboutContent);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-function AboutContent() {
+function AboutContent(props) {
+    const { address , phoneNumber , email , text  } = props.content;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "subheading mb-5",
                 children: [
-                    "Ghalandari Street . Gheytarie , Tehran \xb7 (+98) 939-833-2265 \xb7",
+                    `${address} . ${phoneNumber} . `,
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "mailto: amirmf831380@gmail.com",
-                        children: "amirmf831380@gmail.com"
+                        children: email
                     }, void 0, false, {
                         fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
-                        lineNumber: 8,
+                        lineNumber: 9,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "lead mb-5",
-                children: "I am a junior React developer with high-standard academic background. an enthusiast youth with avidity to learn latest programming technology."
+                children: text
             }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/CV-body/components/CV-about/components/about-content/index.jsx",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, this);
 }
@@ -25670,38 +25789,39 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AboutIcons", ()=>AboutIcons);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function AboutIcons() {
+function AboutIcons(props) {
+    const { gitHub , linkedin  } = props.content;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "social-icons",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 className: "social-icon",
-                href: "https://www.linkedin.com/in/amir-mohammad-fatahi-93a879220/",
+                href: linkedin,
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                     className: "fab fa-linkedin-in"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                    lineNumber: 5,
+                    lineNumber: 6,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                lineNumber: 4,
+                lineNumber: 5,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 className: "social-icon",
-                href: "https://github.com/Amirmfth",
+                href: gitHub,
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                     className: "fab fa-github"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                    lineNumber: 8,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -25711,12 +25831,12 @@ function AboutIcons() {
                     className: "fab fa-twitter"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -25726,18 +25846,18 @@ function AboutIcons() {
                     className: "fab fa-facebook-f"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                    lineNumber: 14,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/CV-body/components/CV-about/components/about-icons/index.jsx",
-        lineNumber: 3,
+        lineNumber: 4,
         columnNumber: 5
     }, this);
 }
@@ -25762,7 +25882,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CVAwards", ()=>CVAwards);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _awardsContent = require("./components/awards-content");
-function CVAwards() {
+function CVAwards(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
         id: "awards",
@@ -25777,7 +25897,9 @@ function CVAwards() {
                     lineNumber: 7,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsContent.AwardsContent), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsContent.AwardsContent), {
+                    content: props.content
+                }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-awards/index.jsx",
                     lineNumber: 8,
                     columnNumber: 9
@@ -25814,11 +25936,12 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AwardsContent", ()=>AwardsContent);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function AwardsContent() {
+var _react = require("react");
+function AwardsContent(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
         className: "fa-ul mb-0",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+        children: (0, _react.Children).toArray(props.content.map((award)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         className: "fa-li",
@@ -25826,203 +25949,25 @@ function AwardsContent() {
                             className: "fas fa-trophy text-warning"
                         }, void 0, false, {
                             fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 6,
-                            columnNumber: 11
+                            lineNumber: 11,
+                            columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 5,
-                        columnNumber: 9
+                        lineNumber: 10,
+                        columnNumber: 15
                     }, this),
-                    "Google Analytics Certified Developer"
+                    award
                 ]
             }, void 0, true, {
                 fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 4,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 12,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 11,
-                        columnNumber: 9
-                    }, this),
-                    "Mobile Web Specialist - Google Certification"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    "1",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "st"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 20,
-                        columnNumber: 10
-                    }, this),
-                    "Place - University of Colorado Boulder - Emerging Tech Competition 2009"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 16,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 25,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this),
-                    "1",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "st"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 27,
-                        columnNumber: 10
-                    }, this),
-                    "Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, this),
-                    "2",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "nd"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 35,
-                        columnNumber: 10
-                    }, this),
-                    "Place - University of Colorado Boulder - Emerging Tech Competition 2008"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 40,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 39,
-                        columnNumber: 9
-                    }, this),
-                    "1",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "st"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 42,
-                        columnNumber: 10
-                    }, this),
-                    "Place - James Buchanan High School - Hackathon 2006"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "fa-li",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fas fa-trophy text-warning"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                            lineNumber: 47,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, this),
-                    "3",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
-                        children: "rd"
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                        lineNumber: 49,
-                        columnNumber: 10
-                    }, this),
-                    "Place - James Buchanan High School - Hackathon 2005"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-                lineNumber: 45,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+                lineNumber: 9,
+                columnNumber: 13
+            }, this);
+        }))
+    }, void 0, false, {
         fileName: "src/components/CV-body/components/CV-awards/components/awards-content/index.jsx",
-        lineNumber: 3,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
@@ -26035,7 +25980,7 @@ $RefreshReg$(_c, "AwardsContent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4WDZy":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"4WDZy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f935 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26046,9 +25991,11 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CVEducation", ()=>CVEducation);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _educationBox = require("./components/education-box");
 var _highSchool = require("./components/high-school");
 var _university = require("./components/university");
-function CVEducation() {
+function CVEducation(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
         id: "education",
@@ -26060,28 +26007,25 @@ function CVEducation() {
                     children: "Education"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-education/index.jsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _university.University), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _highSchool.Highschool), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-education/index.jsx",
                     lineNumber: 10,
                     columnNumber: 9
-                }, this)
+                }, this),
+                (0, _react.Children).toArray(props.content.map((education)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _educationBox.EducationBox), {
+                        content: education
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/index.jsx",
+                        lineNumber: 11,
+                        columnNumber: 60
+                    }, this)))
             ]
         }, void 0, true, {
             fileName: "src/components/CV-body/components/CV-education/index.jsx",
-            lineNumber: 7,
+            lineNumber: 9,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/CV-body/components/CV-education/index.jsx",
-        lineNumber: 6,
+        lineNumber: 8,
         columnNumber: 5
     }, this);
 }
@@ -26094,7 +26038,7 @@ $RefreshReg$(_c, "CVEducation");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./components/high-school":"cipni","./components/university":"i9Bd6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cipni":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./components/high-school":"cipni","./components/university":"i9Bd6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./components/education-box":"8vOtb"}],"cipni":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ee4c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26257,6 +26201,85 @@ $RefreshReg$(_c, "University");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8vOtb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bc0b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bc0b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "EducationBox", ()=>EducationBox);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function EducationBox(props) {
+    const { title , subtitle , date , text  } = props.content;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "d-flex flex-column flex-md-row justify-content-between mb-5",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-grow-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-0",
+                        children: title
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "subheading mb-3",
+                        children: subtitle
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: text
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+                lineNumber: 5,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-shrink-0",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "text-primary",
+                    children: date
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/CV-body/components/CV-education/components/education-box/index.jsx",
+        lineNumber: 4,
+        columnNumber: 5
+    }, this);
+}
+_c = EducationBox;
+var _c;
+$RefreshReg$(_c, "EducationBox");
+
+  $parcel$ReactRefreshHelpers$bc0b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
 },{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gxkv9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$891a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -26272,7 +26295,9 @@ var _seniorWebDeveloper = require("./components/senior-web-developer");
 var _webDeveloper = require("./components/web-developer");
 var _juniorWebDesigner = require("./components/junior-web-designer");
 var _webDesignIntern = require("./components/web-design-intern");
-function CVExperience() {
+var _react = require("react");
+var _experianceBox = require("./components/experiance-box");
+function CVExperience(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
         id: "experience",
@@ -26284,38 +26309,25 @@ function CVExperience() {
                     children: "Experience"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _seniorWebDeveloper.SeniorSection), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _webDeveloper.WebSection), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _juniorWebDesigner.JuniorSection), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
                     lineNumber: 13,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _webDesignIntern.InternSection), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this)
+                (0, _react.Children).toArray(props.content.map((experiance)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experianceBox.ExperianceBox), {
+                        content: experiance
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
+                        lineNumber: 14,
+                        columnNumber: 61
+                    }, this)))
             ]
         }, void 0, true, {
             fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
-            lineNumber: 9,
+            lineNumber: 12,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/CV-body/components/CV-experiance/index.jsx",
-        lineNumber: 8,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -26328,7 +26340,7 @@ $RefreshReg$(_c, "CVExperience");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./components/senior-web-developer":"hqfgp","./components/web-developer":"dTsGf","./components/junior-web-designer":"7ckHw","./components/web-design-intern":"f9zSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hqfgp":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./components/senior-web-developer":"hqfgp","./components/web-developer":"dTsGf","./components/junior-web-designer":"7ckHw","./components/web-design-intern":"f9zSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./components/experiance-box":"k1uea"}],"hqfgp":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a4fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26640,6 +26652,85 @@ $RefreshReg$(_c, "InternSection");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"k1uea":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$127d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$127d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ExperianceBox", ()=>ExperianceBox);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function ExperianceBox(props) {
+    const { title , subtitle , date , text  } = props.content;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "d-flex flex-column flex-md-row justify-content-between mb-5",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-grow-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "mb-0",
+                        children: title
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "subheading mb-3",
+                        children: subtitle
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: text
+                    }, void 0, false, {
+                        fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex-shrink-0",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "text-primary",
+                    children: date
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/CV-body/components/CV-experiance/components/experiance-box/index.jsx",
+        lineNumber: 5,
+        columnNumber: 9
+    }, this);
+}
+_c = ExperianceBox;
+var _c;
+$RefreshReg$(_c, "ExperianceBox");
+
+  $parcel$ReactRefreshHelpers$127d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
 },{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jY4ES":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5610 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -26652,7 +26743,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CVInterests", ()=>CVInterests);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _interestContent = require("./components/interest-content");
-function CVInterests() {
+function CVInterests(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
         id: "interests",
@@ -26667,7 +26758,9 @@ function CVInterests() {
                     lineNumber: 7,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _interestContent.InterestsContent), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _interestContent.InterestsContent), {
+                    content: props.content
+                }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-interests/index.jsx",
                     lineNumber: 8,
                     columnNumber: 9
@@ -26705,26 +26798,18 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "InterestsContent", ()=>InterestsContent);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-function InterestsContent() {
+function InterestsContent(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Apart from being a web developer, surprisingly I'm a huge sportFan. as an outdoor activity I mostly play Football with my friends or play billiard ,though i must say i am a novice"
+        children: (0, _react.Children).toArray(props.content.map((text)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: text
             }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "mb-0",
-                children: "but for indoor activity , I do various stuff like making music(which I love the most) , studying about management and business or learn new languages. I love being in my own house and my own room,and frankly, I see my self as an introverted person"
-            }, void 0, false, {
-                fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+                lineNumber: 8,
+                columnNumber: 18
+            }, this);
+        }))
+    }, void 0, false, {
         fileName: "src/components/CV-body/components/CV-interests/components/interest-content/index.jsx",
         lineNumber: 5,
         columnNumber: 5
@@ -26752,7 +26837,8 @@ parcelHelpers.export(exports, "CVSkills", ()=>CVSkills);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _languagesTools = require("./components/languages-tools");
 var _workflow = require("./components/workflow");
-function CVSkills() {
+function CVSkills(props) {
+    const { langAndTools , workflow  } = props.content;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "resume-section",
         id: "skills",
@@ -26764,28 +26850,32 @@ function CVSkills() {
                     children: "Skills"
                 }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-skills/index.jsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _languagesTools.LanguagesTools), {}, void 0, false, {
-                    fileName: "src/components/CV-body/components/CV-skills/index.jsx",
                     lineNumber: 9,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _workflow.Workflow), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _languagesTools.LanguagesTools), {
+                    content: langAndTools
+                }, void 0, false, {
                     fileName: "src/components/CV-body/components/CV-skills/index.jsx",
                     lineNumber: 10,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _workflow.Workflow), {
+                    content: workflow
+                }, void 0, false, {
+                    fileName: "src/components/CV-body/components/CV-skills/index.jsx",
+                    lineNumber: 11,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/CV-body/components/CV-skills/index.jsx",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/CV-body/components/CV-skills/index.jsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -26810,7 +26900,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LanguagesTools", ()=>LanguagesTools);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-function LanguagesTools() {
+function LanguagesTools(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26823,177 +26913,23 @@ function LanguagesTools() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: "list-inline dev-icons",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: (0, _react.Children).toArray(props.content.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: "list-inline-item",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-html5"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 9,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-css3-alt"
+                            className: item
                         }, void 0, false, {
                             fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
                             lineNumber: 12,
-                            columnNumber: 11
+                            columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
                         lineNumber: 11,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-js-square"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 14,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-angular"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-react"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-node-js"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 24,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 23,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-sass"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 27,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-less"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-wordpress"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-gulp"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 36,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-grunt"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: "list-inline-item",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fab fa-npm"
-                        }, void 0, false, {
-                            fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                            lineNumber: 42,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
-                        lineNumber: 41,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                        columnNumber: 15
+                    }, this);
+                }))
+            }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-skills/components/languages-tools/index.jsx",
                 lineNumber: 7,
                 columnNumber: 7
@@ -27026,7 +26962,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Workflow", ()=>Workflow);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-function Workflow() {
+function Workflow(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27039,8 +26975,8 @@ function Workflow() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: "fa-ul mb-0",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: (0, _react.Children).toArray(props.content.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: "fa-li",
@@ -27048,92 +26984,23 @@ function Workflow() {
                                     className: "fas fa-check"
                                 }, void 0, false, {
                                     fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                    lineNumber: 10,
-                                    columnNumber: 13
+                                    lineNumber: 13,
+                                    columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                lineNumber: 9,
-                                columnNumber: 11
+                                lineNumber: 12,
+                                columnNumber: 17
                             }, this),
-                            "Mobile-First, Responsive Design"
+                            item
                         ]
                     }, void 0, true, {
                         fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "fa-li",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                    className: "fas fa-check"
-                                }, void 0, false, {
-                                    fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                    lineNumber: 16,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                lineNumber: 15,
-                                columnNumber: 11
-                            }, this),
-                            "Cross Browser Testing & Debugging"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                        lineNumber: 14,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "fa-li",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                    className: "fas fa-check"
-                                }, void 0, false, {
-                                    fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                    lineNumber: 22,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                lineNumber: 21,
-                                columnNumber: 11
-                            }, this),
-                            "Cross Functional Teams"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "fa-li",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                    className: "fas fa-check"
-                                }, void 0, false, {
-                                    fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                    lineNumber: 28,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                                lineNumber: 27,
-                                columnNumber: 11
-                            }, this),
-                            "Agile Development & Scrum"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                        lineNumber: 11,
+                        columnNumber: 15
+                    }, this);
+                }))
+            }, void 0, false, {
                 fileName: "src/components/CV-body/components/CV-skills/components/workflow/index.jsx",
                 lineNumber: 7,
                 columnNumber: 7
@@ -27168,12 +27035,14 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _collapsNavbar = require("./components/collaps-navbar");
 var _navbarToggler = require("./components/navbar-toggler");
 var _navbarBrand = require("./components/navbar-brand");
-function Navbar() {
+function Navbar(props) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         className: "navbar navbar-expand-lg navbar-dark bg-primary fixed-top",
         id: "sideNav",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarBrand.NavbarBrand), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarBrand.NavbarBrand), {
+                content: props.content
+            }, void 0, false, {
                 fileName: "src/components/navbar/index.jsx",
                 lineNumber: 11,
                 columnNumber: 7
@@ -27394,17 +27263,18 @@ parcelHelpers.export(exports, "NavbarBrand", ()=>NavbarBrand);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _myProfileJpg = require("../../../../../assets/img/myProfile.jpg");
 var _myProfileJpgDefault = parcelHelpers.interopDefault(_myProfileJpg);
-function NavbarBrand() {
+function NavbarBrand(props) {
+    const { navbarName  } = props.content;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
         className: "navbar-brand js-scroll-trigger",
         href: "#page-top",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 className: "d-block d-lg-none",
-                children: "Amir mohammad Fatahi"
+                children: navbarName
             }, void 0, false, {
                 fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27415,18 +27285,18 @@ function NavbarBrand() {
                     alt: "..."
                 }, void 0, false, {
                     fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-                    lineNumber: 8,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/navbar/components/navbar-brand/index.jsx",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, this);
 }
@@ -27439,7 +27309,7 @@ $RefreshReg$(_c, "NavbarBrand");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../../../assets/img/myProfile.jpg":"gcgj3"}],"gcgj3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../../../../assets/img/myProfile.jpg":"gcgj3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gcgj3":[function(require,module,exports) {
 module.exports = require("f1f7e2ba85d25e31").getBundleURL("3uGpT") + "myProfile.ce2f3eeb.jpg" + "?" + Date.now();
 
 },{"f1f7e2ba85d25e31":"lgJ39"}],"lgJ39":[function(require,module,exports) {
